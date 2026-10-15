@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>寻宝大冒险 | Async/Await演示</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      background:#1a1a2e;
+      color:#ffe8a3;
+      font-family: "Microsoft Yahei",sans-serif;
+      max-width:700px;
+      margin:40px auto;
+      padding:0 20px;
+    }
+    h1{
+      text-align:center;
+      text-shadow: 0 0 8px #ffd700;
+    }
+    /*日志容器动画*/
+    #log-area{
+      background:#16213e;
+      padding:20px;
+      height:420px;
+      overflow-y:auto;
+      border-radius:12px;
+      border:2px solid #ffc107;
+    }
+    #log-area p{
+      font-size:16px;
+      line-height:1.8;
+      margin:8px 0;
+      animation: fadeIn 0.6s ease-out;
+    }
+    @keyframes fadeIn{
+      from {opacity:0; transform:translateY(10px);}
+      to {opacity:1; transform:translateY(0);}
+    }
+    .fail{
+      color:#ff6b6b;
+    }
+    .success{
+      color:#71ff9e;
+    }
+  </style>
+</head>
+<body>
+  <h1>🏺神秘寻宝冒险</h1>
+  <div id="log-area"></div>
+
+  <!--引入js脚本-->
+  <script src="./treasure.js"></script>
+</body>
+</html>
